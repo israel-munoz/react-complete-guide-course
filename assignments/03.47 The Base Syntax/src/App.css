@@ -1,0 +1,54 @@
+.App {
+  margin: 16px;
+}
+
+.user-input,
+.user-output {
+  background-color: #f8f8f8;
+  border: solid 1px #ddd;
+  margin: 1em 0;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 140%;
+  font-weight: 600;
+  margin: 0 0 .5rem;
+}
+
+label,
+input {
+  cursor: pointer;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+}
+
+label {
+  font-size: 80%;
+  opacity: .5;
+}
+
+input {
+  --bg-border: #bbb;
+  --bg-color: rgba(0, 0, 0, .2);
+  background-color: transparent;
+  background-image: radial-gradient(ellipse 50% 30% at 50% 106%, var(--bg-color), transparent);
+  border-style: none none solid;
+  border-color: var(--bg-border);
+  font: inherit;
+  line-height: 2;
+  outline: none;
+  padding: 0 1ch;
+  transition: border-color .2s linear, background-image .2s linear;
+}
+
+input:hover {
+  --bg-border: #ddd;
+  --bg-color: rgba(0, 0, 0, .1);
+}
+
+input:focus {
+  --bg-border: #33f;
+  --bg-color: rgba(0, 0, 128, .2);
+}
