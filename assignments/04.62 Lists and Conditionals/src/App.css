@@ -1,0 +1,54 @@
+.App {
+  margin: 16px;
+}
+
+label,
+input {
+  cursor: pointer;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+}
+
+label {
+  font-size: 80%;
+  opacity: .5;
+}
+
+input {
+  --bg-border: #bbb;
+  --bg-color: rgba(0, 0, 0, .2);
+  border: solid 1px var(--bg-border);
+  font: inherit;
+  line-height: 2;
+  outline: none;
+  padding: 0 1ch;
+  transition: border-color .2s linear, background-image .2s linear;
+}
+
+input:hover {
+  --bg-border: #ddd;
+  --bg-color: rgba(0, 0, 0, .1);
+}
+
+input:focus {
+  --bg-border: #33f;
+  --bg-color: rgba(0, 0, 128, .2);
+}
+
+input[readonly] {
+  color: rgba(0, 0, 0, .5);
+}
+
+.char {
+  display: inline-block;
+  border: solid 1px #000;
+  height: 2em;
+  width: 4ch;
+  line-height: 2;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  margin: .25em;
+  border-radius: .25em;
+}
